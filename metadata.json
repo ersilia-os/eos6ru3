@@ -1,9 +1,9 @@
 {
-    "Identifier": "",
-    "Slug": "",
-    "Status": "",
-    "Title": "",
-    "Description": "",
+    "Identifier": "eos6ru3",
+    "Slug": "whales-chembl",
+    "Status": "In progress",
+    "Title": "WHALES similarity search ChEMBL",
+    "Description": "Search ChEMBL based on WHALES descriptors, used for scaffold hopping",
     "Mode": "",
     "Task": [],
     "Input": [],
@@ -12,8 +12,8 @@
     "Output Type": [],
     "Output Shape": "",
     "Interpretation": "",
-    "Tag": [],
-    "Publication": "",
-    "Source Code": "",
-    "License": ""
+    "Tag": "Similarity",
+    "Publication": "https://link.springer.com/protocol/10.1007/978-1-0716-1209-5_2",
+    "Source Code": "https://github.com/ETHmodlab/scaffold_hopping_whales",
+    "License": "GPLv3"
 }
