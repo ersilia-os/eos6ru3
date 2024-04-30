@@ -12,6 +12,7 @@ output_file = sys.argv[2]
 # current file directory
 root = os.path.dirname(os.path.abspath(__file__))
 
+
 # my model
 def my_model(smiles_list):
     return [MolWt(Chem.MolFromSmiles(smi)) for smi in smiles_list]
@@ -26,7 +27,7 @@ with open(input_file, "r") as f:
 # run model
 outputs = my_model(smiles_list)
 
-#check input and output have the same lenght
+# check input and output have the same lenght
 input_len = len(smiles_list)
 output_len = len(outputs)
 assert input_len == output_len
