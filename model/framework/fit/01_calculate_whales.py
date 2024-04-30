@@ -28,11 +28,11 @@ def read_molecule_sdf_file(sdf_file):
     for m in suppl:
         return prepare_mol(m, do_geometry=False, do_charge=False)[0]
 
-
-for chembl_id in tqdm(chembl_ids[:3]):
-    R0 = []
-    R1 = []
-    R2 = []
+R0 = []
+R1 = []
+R2 = []
+smiles_list = []
+for chembl_id in tqdm(chembl_ids[:150]):
     molecule_folder = os.path.join(STRUCTURES_FOLDER, chembl_id)
     sdf_files = [l for l in os.listdir(molecule_folder)]
     sdf_files = sorted(sdf_files)
@@ -48,6 +48,7 @@ for chembl_id in tqdm(chembl_ids[:3]):
     m0_whales, lab0 = do_whales.whales_from_mol(m0)
     m1_whales, lab1 = do_whales.whales_from_mol(m1)
     m2_whales, lab2 = do_whales.whales_from_mol(m2)
+    smiles_list += [Chem.MolToSmiles(m0)]
     R0 += [m0_whales]
     R1 += [m1_whales]
     R2 += [m2_whales]
@@ -70,3 +71,8 @@ with open(os.path.join(CHECKPOINTS_FOLDER, "R2.csv"), "w") as f:
     writer.writerow(lab2)
     for r2 in R2:
         writer.writerow(r2)
+
+with open(os.path.join(CHECKPOINTS_FOLDER, "reference_smiles.txt"), "w") as f:
+    writer = csv.writer(f)
+    for smiles in smiles_list:
+        writer.writerow([smiles])

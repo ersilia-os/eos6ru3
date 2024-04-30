@@ -8,7 +8,6 @@ from bentoml.service import BentoServiceArtifact
 import pickle
 import os
 import shutil
-import collections
 import tempfile
 import subprocess
 import csv
@@ -21,13 +20,6 @@ def load_model(framework_dir, checkpoints_dir):
     mdl = Model()
     mdl.load(framework_dir, checkpoints_dir)
     return mdl
-
-
-def Float(x):
-    try:
-        return float(x)
-    except:
-        return None
 
 
 def String(x):
@@ -90,8 +82,8 @@ class Model(object):
             R = []
             for r in reader:
                 R += [
-                    {"outcome": [Float(x) for x in r]}
-                ]  # <-- EDIT: Modify according to type of output (Float, String...)
+                    {"outcome": [String(x) for x in r]}
+                ]
         meta = {"outcome": h}
         result = {"result": R, "meta": meta}
         shutil.rmtree(tmp_folder)
