@@ -28,6 +28,7 @@ def whales_from_mol(mol, charge_threshold=0, do_charge=True, property_name=""):
 
     mol, err = import_mol(mol)
     errors = 0
+    lab = None
 
     if err == 1:
         x = np.full((33,), -999.0)

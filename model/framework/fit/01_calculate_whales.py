@@ -26,13 +26,13 @@ with open(os.path.join(CHECKPOINTS_FOLDER, "chembl_ids.txt"), "w") as f:
 def read_molecule_sdf_file(sdf_file):
     suppl = Chem.SDMolSupplier(sdf_file, sanitize=False)
     for m in suppl:
-        return prepare_mol(m, do_geometry=False, do_charge=False)[0]
+        return prepare_mol(m, do_geometry=False, do_charge=True)[0]
 
 R0 = []
 R1 = []
 R2 = []
 smiles_list = []
-for chembl_id in tqdm(chembl_ids[:150]):
+for chembl_id in tqdm(chembl_ids):
     molecule_folder = os.path.join(STRUCTURES_FOLDER, chembl_id)
     sdf_files = [l for l in os.listdir(molecule_folder)]
     sdf_files = sorted(sdf_files)
