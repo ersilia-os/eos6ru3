@@ -1,3 +1,11 @@
+model/checkpoints/structures
+model/checkpoints/R0.csv
+model/checkpoints/R0_scaled.csv
+model/checkpoints/R1.csv
+model/checkpoints/R1_scaled.csv
+model/checkpoints/R2.csv
+model/checkpoints/R2_scaled.csv
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
