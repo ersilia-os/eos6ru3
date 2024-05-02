@@ -87,15 +87,15 @@ for smiles in smiles_list:
     results_by_index = collections.defaultdict(list)
 
     for i in range(D0.shape[0]):
-        for j in range(D0.shape[0]):
+        for j in range(D0.shape[1]):
             results_by_index[I0[i,j]] += [D0[i,j]]
     
     for i in range(D1.shape[0]):
-        for j in range(D1.shape[0]):
+        for j in range(D1.shape[1]):
             results_by_index[I1[i,j]] += [D1[i,j]]
     
     for i in range(D2.shape[0]):
-        for j in range(D2.shape[0]):
+        for j in range(D2.shape[1]):
             results_by_index[I2[i,j]] += [D2[i,j]]
 
     results_by_index = dict((k, np.min(v)) for k,v in results_by_index.items())
