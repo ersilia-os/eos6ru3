@@ -12,7 +12,7 @@
     "Output Type": ["String"],
     "Output Shape": "List",
     "Interpretation": "The top 100 most similar molecules are returned, based on WHALES descriptors. 3D conformer generation is done internally.",
-    "Tag": "Similarity",
+    "Tag": ["Similarity"],
     "Publication": "https://link.springer.com/protocol/10.1007/978-1-0716-1209-5_2",
     "Source Code": "https://github.com/ETHmodlab/scaffold_hopping_whales",
     "License": "GPLv3"
