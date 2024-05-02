@@ -65,7 +65,7 @@ with open(os.path.join(CHECKPOINTS_FOLDER, "reference_smiles.txt"), "r") as f:
     for r in reader:
         ref_smiles += [r[0]]
 
-N_NEIGH = 10
+N_NEIGH = 100
 
 # iterate over molecules
 outputs = []

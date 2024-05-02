@@ -26,6 +26,7 @@ Search Q-Mug based on WHALES descriptors. Q-Mug is a subset of 600k bioactive mo
 ## Ersilia model URLs
 * [GitHub](https://github.com/ersilia-os/eos6ru3)
 * [AWS S3](https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos6ru3.zip)
+* [DockerHub](https://hub.docker.com/r/ersiliaos/eos6ru3) (AMD64)
 
 ## Citation
 
