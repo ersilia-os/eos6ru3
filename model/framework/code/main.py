@@ -104,9 +104,9 @@ for smiles in smiles_list:
     results_smiles = [ref_smiles[r[0]] for r in results]
     outputs += [results_smiles]
 
-header = ["smi_{0}".format(str(i).zfill(3)) for i in range(N_NEIGH)]
+header = ["smiles_{0}".format(str(i).zfill(2)) for i in range(N_NEIGH)]
 
-# check input and output have the same lenght
+# check input and output have the same length
 input_len = len(smiles_list)
 output_len = len(outputs)
 assert input_len == output_len
