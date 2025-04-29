@@ -1,6 +1,6 @@
 # WHALES similarity search on 600k molecules from Q-Mug
 
-Search Q-Mug based on WHALES descriptors. Q-Mug is a subset of 600k bioactive molecules from ChEMBL. Three conformers are given for each molecule. WhALES is a simple descriptor useful for scaffold hopping.
+Search Q-Mug based on WHALES descriptors. Q-Mug is a subset of 600k bioactive molecules from ChEMBL. Three conformers are given for each molecule. WHALES is a simple descriptor useful for scaffold hopping.
 
 ## Identifiers
 
