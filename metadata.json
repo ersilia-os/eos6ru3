@@ -3,32 +3,43 @@
     "Slug": "whales-qmug",
     "Status": "Ready",
     "Title": "WHALES similarity search on 600k molecules from Q-Mug",
-    "Description": "Search Q-Mug based on WHALES descriptors. Q-Mug is a subset of 600k bioactive molecules from ChEMBL. Three conformers are given for each molecule. WhALES is a simple descriptor useful for scaffold hopping.",
-    "Mode": "Pretrained",
-    "Task": [
-        "Generative"
-    ],
+    "Description": "Search Q-Mug based on WHALES descriptors. Q-Mug is a subset of 600k bioactive molecules from ChEMBL. Three conformers are given for each molecule. WhALES is a simple descriptor useful for scaffold hopping.\n",
+    "Source": "Local",
+    "Source Type": "Internal",
     "Input": [
         "Compound"
     ],
-    "Input Shape": "Single",
+    "Input Dimension": 1,
+    "Task": "Sampling",
+    "Subtask": "Similarity search",
+    "Biomedical Area": [
+        "Any"
+    ],
+    "Target Organism": [
+        "Not Applicable"
+    ],
     "Output": [
         "Compound"
     ],
-    "Output Type": [
-        "String"
-    ],
-    "Output Shape": "List",
+    "Output Dimension": 100,
+    "Output Consistency": "Fixed",
     "Interpretation": "The top 100 most similar molecules are returned, based on WHALES descriptors. 3D conformer generation is done internally.",
     "Tag": [
         "Similarity"
     ],
     "Publication": "https://link.springer.com/protocol/10.1007/978-1-0716-1209-5_2",
+    "Publication Type": "Peer reviewed",
+    "Publication Year": 2021,
     "Source Code": "https://github.com/ETHmodlab/scaffold_hopping_whales",
-    "License": "GPL-3.0",
-    "S3": "https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos6ru3.zip",
+    "License": "GPL-3.0-only",
+    "Contributor": "miquelduranfrigola",
+    "Incorporation Date": "2024-04-22",
     "DockerHub": "https://hub.docker.com/r/ersiliaos/eos6ru3",
     "Docker Architecture": [
         "AMD64"
+    ],
+    "S3": "https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos6ru3.zip",
+    "Deployment": [
+        "Local"
     ]
 }
