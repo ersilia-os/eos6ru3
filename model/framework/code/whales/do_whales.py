@@ -133,6 +133,7 @@ def extract_lcm(data, start=0, end=100, step=10, lab_string=""):
 
     # Calculates percentiles according to the specified settings
     perc = range(start, end + 1, step)
+    data = np.asarray(data)
     x = np.percentile(data, list(perc), axis=0)
     x = np.concatenate(
         (x[:, 0], x[:, 1], x[:, 2]), axis=0
