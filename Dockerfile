@@ -8,7 +8,6 @@ RUN pip install joblib==1.3.2
 RUN pip install scikit-learn==1.0.2
 RUN pip install faiss-cpu==1.7.4
 RUN pip install cdpkit==1.1.1
-RUN conda install -c conda-forge xorg-libxrender xorg-libxtst
 RUN pip install numpy==1.24.4
 
 WORKDIR /repo
