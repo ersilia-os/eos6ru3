@@ -50,8 +50,12 @@ _10 of 100 columns are shown_
 ### Resource Consumption
 - **Model Size (Mb):** `301`
 - **Environment Size (Mb):** `1011`
-- **Image Size (Mb):** `1858.93`
+- **Image Size (Mb):** `1858.71`
 
+**Computational Performance (seconds):**
+- 10 inputs: `38.12`
+- 100 inputs: `806.55`
+- 10000 inputs: `-1`
 
 ### References
 - **Source Code**: [https://github.com/ETHmodlab/scaffold_hopping_whales](https://github.com/ETHmodlab/scaffold_hopping_whales)
