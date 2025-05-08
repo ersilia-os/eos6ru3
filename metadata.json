@@ -40,8 +40,8 @@
     "S3": "https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos6ru3.zip",
     "DockerHub": "https://hub.docker.com/r/ersiliaos/eos6ru3",
     "Docker Architecture": "AMD64",
-    "Docker Pack Method": "FastAPI",
     "Model Size": 301.0,
     "Environment Size": 1011.0,
-    "Image Size": 1858.93
+    "Image Size": 1858.93,
+    "Docker Pack Method": "FastAPI"
 }
