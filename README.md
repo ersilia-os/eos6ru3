@@ -4,6 +4,7 @@ Search Q-Mug based on WHALES descriptors. Q-Mug is a subset of 600k bioactive mo
 
 This model was incorporated on 2024-04-22.
 
+
 ## Information
 ### Identifiers
 - **Ersilia Identifier:** `eos6ru3`
@@ -13,7 +14,7 @@ This model was incorporated on 2024-04-22.
 - **Task:** `Sampling`
 - **Subtask:** `Similarity search`
 - **Biomedical Area:** `Any`
-- **Target Organism:** `Not Applicable`
+- **Target Organism:** `Any`
 - **Tags:** `Similarity`
 
 ### Input
