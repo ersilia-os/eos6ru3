@@ -41,7 +41,7 @@
     "DockerHub": "https://hub.docker.com/r/ersiliaos/eos6ru3",
     "Docker Architecture": "AMD64",
     "Model Size": 301.0,
-    "Environment Size": 1011.0,
+    "Environment Size": 1001.0,
     "Image Size": 1858.71,
     "Computational Performance 1": 38.12,
     "Computational Performance 2": 68.08,
