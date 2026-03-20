@@ -70,39 +70,42 @@ N_NEIGH = 100
 # iterate over molecules
 outputs = []
 for smiles in smiles_list:
-    conformers = prepare_molecule(smiles)
-    R = []
-    for conf in conformers:
-        r, lab = do_whales.whales_from_mol(conf)
-        R += [r]
-    R = np.array(R)
-    R0 = scaler0.transform(R)
-    R1 = scaler1.transform(R)
-    R2 = scaler2.transform(R)
+    try:
+        conformers = prepare_molecule(smiles)
+        R = []
+        for conf in conformers:
+            r, lab = do_whales.whales_from_mol(conf)
+            R += [r]
+        R = np.array(R)
+        R0 = scaler0.transform(R)
+        R1 = scaler1.transform(R)
+        R2 = scaler2.transform(R)
 
-    D0, I0 = index0.search(R0, k=N_NEIGH)
-    D1, I1 = index1.search(R1, k=N_NEIGH)
-    D2, I2 = index2.search(R2, k=N_NEIGH)
+        D0, I0 = index0.search(R0, k=N_NEIGH)
+        D1, I1 = index1.search(R1, k=N_NEIGH)
+        D2, I2 = index2.search(R2, k=N_NEIGH)
 
-    results_by_index = collections.defaultdict(list)
+        results_by_index = collections.defaultdict(list)
 
-    for i in range(D0.shape[0]):
-        for j in range(D0.shape[1]):
-            results_by_index[I0[i,j]] += [D0[i,j]]
-    
-    for i in range(D1.shape[0]):
-        for j in range(D1.shape[1]):
-            results_by_index[I1[i,j]] += [D1[i,j]]
-    
-    for i in range(D2.shape[0]):
-        for j in range(D2.shape[1]):
-            results_by_index[I2[i,j]] += [D2[i,j]]
+        for i in range(D0.shape[0]):
+            for j in range(D0.shape[1]):
+                results_by_index[I0[i,j]] += [D0[i,j]]
 
-    results_by_index = dict((k, np.min(v)) for k,v in results_by_index.items())
+        for i in range(D1.shape[0]):
+            for j in range(D1.shape[1]):
+                results_by_index[I1[i,j]] += [D1[i,j]]
 
-    results = sorted(results_by_index.items(), key=lambda x: x[1])[:N_NEIGH]
-    results_smiles = [ref_smiles[r[0]] for r in results]
-    outputs += [results_smiles]
+        for i in range(D2.shape[0]):
+            for j in range(D2.shape[1]):
+                results_by_index[I2[i,j]] += [D2[i,j]]
+
+        results_by_index = dict((k, np.min(v)) for k,v in results_by_index.items())
+
+        results = sorted(results_by_index.items(), key=lambda x: x[1])[:N_NEIGH]
+        results_smiles = [ref_smiles[r[0]] for r in results]
+        outputs += [results_smiles]
+    except Exception:
+        outputs += [[None] * N_NEIGH]
 
 header = ["smiles_{0}".format(str(i).zfill(2)) for i in range(N_NEIGH)]
 
