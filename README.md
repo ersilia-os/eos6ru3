@@ -2,7 +2,7 @@
 
 Search Q-Mug based on WHALES descriptors. Q-Mug is a subset of 600k bioactive molecules from ChEMBL. Three conformers are given for each molecule. WhALES is a simple descriptor useful for scaffold hopping.
 
-This model was incorporated on 2024-04-22.Last packaged on 2026-03-20.
+This model was incorporated on 2024-04-22.Last packaged on 2026-04-23.
 
 ## Information
 ### Identifiers
@@ -50,11 +50,11 @@ _10 of 100 columns are shown_
 ### Resource Consumption
 - **Model Size (Mb):** `301`
 - **Environment Size (Mb):** `1008`
-- **Image Size (Mb):** `1878.44`
+- **Image Size (Mb):** `1878.59`
 
 **Computational Performance (seconds):**
-- 10 inputs: `31.7`
-- 100 inputs: `196.04`
+- 10 inputs: `31.11`
+- 100 inputs: `188.32`
 - 10000 inputs: `-1`
 
 ### References
