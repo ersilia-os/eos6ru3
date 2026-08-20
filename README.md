@@ -1,6 +1,6 @@
 # WHALES similarity search on 600k molecules from Q-Mug
 
-Search Q-Mug based on WHALES descriptors. Q-Mug is a subset of 600k bioactive molecules from ChEMBL. Three conformers are given for each molecule. WhALES is a simple descriptor useful for scaffold hopping.
+Searches a reference collection of roughly 600,000 molecules for the 100 closest to a query, using WHALES descriptors so that similarity is judged by the distribution of charge across three-dimensional shape rather than by shared substructures. This makes the search suited to scaffold hopping, where the aim is to find compounds presenting comparable interaction patterns on an unrelated skeleton. Because the descriptors depend on conformation, retrieved neighbours reflect the geometries used to build the index.
 
 This model was incorporated on 2024-04-22.Last packaged on 2026-04-23.
 
@@ -23,7 +23,7 @@ This model was incorporated on 2024-04-22.Last packaged on 2026-04-23.
 ### Output
 - **Output Dimension:** `100`
 - **Output Consistency:** `Fixed`
-- **Interpretation:** The top 100 most similar molecules are returned, based on WHALES descriptors. 3D conformer generation is done internally.
+- **Interpretation:** List of the 100 most shape and charge similar molecules from a 600,000-compound reference set.
 
 Below are the **Output Columns** of the model:
 | Name | Type | Direction | Description |
@@ -65,7 +65,7 @@ _10 of 100 columns are shown_
 - **Ersilia Contributor:** [miquelduranfrigola](https://github.com/miquelduranfrigola)
 
 ### License
-This package is licensed under a [GPL-3.0](https://github.com/ersilia-os/ersilia/blob/master/LICENSE) license. The model contained within this package is licensed under a [GPL-3.0-only](LICENSE) license.
+This package is licensed under a [GPL-3.0](https://github.com/ersilia-os/ersilia/blob/master/LICENSE) license. The model contained within this package is licensed under a [MIT](LICENSE) license.
 
 **Notice**: Ersilia grants access to models _as is_, directly from the original authors, please refer to the original code repository and/or publication if you use the model in your research.
 
