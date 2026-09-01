@@ -107,7 +107,7 @@ for smiles in smiles_list:
     except Exception:
         outputs += [[None] * N_NEIGH]
 
-header = ["smiles_{0}".format(str(i).zfill(2)) for i in range(N_NEIGH)]
+header = ["smi_{0}".format(str(i).zfill(2)) for i in range(N_NEIGH)]
 
 # check input and output have the same length
 input_len = len(smiles_list)
