@@ -28,16 +28,16 @@ This model was incorporated on 2024-04-22.Last packaged on 2026-04-23.
 Below are the **Output Columns** of the model:
 | Name | Type | Direction | Description |
 |------|------|-----------|-------------|
-| smiles_00 | string |  | Similar molecule index 0. This molecule is from the QMUG database and similarity is based on WHALES descriptors |
-| smiles_01 | string |  | Similar molecule index 1. This molecule is from the QMUG database and similarity is based on WHALES descriptors |
-| smiles_02 | string |  | Similar molecule index 2. This molecule is from the QMUG database and similarity is based on WHALES descriptors |
-| smiles_03 | string |  | Similar molecule index 3. This molecule is from the QMUG database and similarity is based on WHALES descriptors |
-| smiles_04 | string |  | Similar molecule index 4. This molecule is from the QMUG database and similarity is based on WHALES descriptors |
-| smiles_05 | string |  | Similar molecule index 5. This molecule is from the QMUG database and similarity is based on WHALES descriptors |
-| smiles_06 | string |  | Similar molecule index 6. This molecule is from the QMUG database and similarity is based on WHALES descriptors |
-| smiles_07 | string |  | Similar molecule index 7. This molecule is from the QMUG database and similarity is based on WHALES descriptors |
-| smiles_08 | string |  | Similar molecule index 8. This molecule is from the QMUG database and similarity is based on WHALES descriptors |
-| smiles_09 | string |  | Similar molecule index 9. This molecule is from the QMUG database and similarity is based on WHALES descriptors |
+| smi_00 | string |  | Similar molecule index 0. This molecule is from the QMUG database and similarity is based on WHALES descriptors |
+| smi_01 | string |  | Similar molecule index 1. This molecule is from the QMUG database and similarity is based on WHALES descriptors |
+| smi_02 | string |  | Similar molecule index 2. This molecule is from the QMUG database and similarity is based on WHALES descriptors |
+| smi_03 | string |  | Similar molecule index 3. This molecule is from the QMUG database and similarity is based on WHALES descriptors |
+| smi_04 | string |  | Similar molecule index 4. This molecule is from the QMUG database and similarity is based on WHALES descriptors |
+| smi_05 | string |  | Similar molecule index 5. This molecule is from the QMUG database and similarity is based on WHALES descriptors |
+| smi_06 | string |  | Similar molecule index 6. This molecule is from the QMUG database and similarity is based on WHALES descriptors |
+| smi_07 | string |  | Similar molecule index 7. This molecule is from the QMUG database and similarity is based on WHALES descriptors |
+| smi_08 | string |  | Similar molecule index 8. This molecule is from the QMUG database and similarity is based on WHALES descriptors |
+| smi_09 | string |  | Similar molecule index 9. This molecule is from the QMUG database and similarity is based on WHALES descriptors |
 
 _10 of 100 columns are shown_
 ### Source and Deployment
