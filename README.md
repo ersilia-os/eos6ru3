@@ -2,7 +2,8 @@
 
 Retrieves the 100 nearest neighbours of a query from Q-Mug, a collection of roughly 600,000 bioactive molecules drawn from ChEMBL with three conformers apiece. Ersilia assembled the search index; the similarity itself uses WHALES descriptors, which Grisoni and Schneider describe as encoding interatomic distances, molecular shape and partial charges together, and which were devised for scaffold hopping away from natural product templates. Three conformers are generated for the query too, so retrieval depends on conformer sampling.
 
-This model was incorporated on 2024-04-22.Last packaged on 2026-09-01.
+This model was incorporated on 2024-04-22.
+Last packaged on 2026-09-01.
 
 ## Information
 ### Identifiers
@@ -46,6 +47,7 @@ _10 of 100 columns are shown_
 - **DockerHub**: [https://hub.docker.com/r/ersiliaos/eos6ru3](https://hub.docker.com/r/ersiliaos/eos6ru3)
 - **Docker Architecture:** `AMD64`
 - **S3 Storage**: [https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos6ru3.zip](https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos6ru3.zip)
+- **Apptainer**: [https://models-sif.s3.eu-north-1.amazonaws.com/eos6ru3_v2.sif](https://models-sif.s3.eu-north-1.amazonaws.com/eos6ru3_v2.sif)
 
 ### Resource Consumption
 - **Model Size (Mb):** `301`
