@@ -3,7 +3,7 @@
 Retrieves the 100 nearest neighbours of a query from Q-Mug, a collection of roughly 600,000 bioactive molecules drawn from ChEMBL with three conformers apiece. Ersilia assembled the search index; the similarity itself uses WHALES descriptors, which Grisoni and Schneider describe as encoding interatomic distances, molecular shape and partial charges together, and which were devised for scaffold hopping away from natural product templates. Three conformers are generated for the query too, so retrieval depends on conformer sampling.
 
 This model was incorporated on 2024-04-22.
-Last packaged on 2026-09-01.
+Last packaged on 2026-11-19.
 
 ## Information
 ### Identifiers
@@ -52,11 +52,11 @@ _10 of 100 columns are shown_
 ### Resource Consumption
 - **Model Size (Mb):** `469`
 - **Environment Size (Mb):** `1010`
-- **Image Size (Mb):** `1892.97`
+- **Image Size (Mb):** `522.17`
 
 **Computational Performance (seconds):**
-- 10 inputs: `27.44`
-- 100 inputs: `150.11`
+- 10 inputs: `25.85`
+- 100 inputs: `180.1`
 - 10000 inputs: `-1`
 
 ### References
